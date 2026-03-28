@@ -1,0 +1,62 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id            String    @id @default(cuid())
+  email         String    @unique
+  name          String?
+  passwordHash  String
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+
+  // Abo-Status
+  hasGuide      Boolean   @default(false)
+  hasAbo        Boolean   @default(false)
+  aboExpiresAt  DateTime?
+
+  // Stripe
+  stripeCustomerId    String?   @unique
+  stripeSubscriptionId String?
+
+  orders        Order[]
+}
+
+model Order {
+  id            String    @id @default(cuid())
+  userId        String
+  user          User      @relation(fields: [userId], references: [id])
+  type          String    // "guide" | "abo" | "kombi"
+  amount        Int       // Betrag in Cent
+  currency      String    @default("eur")
+  status        String    @default("pending") // "pending" | "completed" | "failed"
+  stripeId      String?   @unique
+  createdAt     DateTime  @default(now())
+}
+
+model Update {
+  id            String    @id @default(cuid())
+  title         String
+  slug          String    @unique
+  excerpt       String
+  content       String    // Markdown
+  category      String    // "plattform" | "gesetz" | "trend" | "einstellung" | "ki"
+  priority      String    @default("normal") // "normal" | "wichtig" | "dringend"
+  publishedAt   DateTime  @default(now())
+  createdAt     DateTime  @default(now())
+}
+
+model GuideChapter {
+  id            String    @id @default(cuid())
+  number        Int
+  title         String
+  slug          String    @unique
+  content       String    // Markdown
+  sortOrder     Int
+  updatedAt     DateTime  @updatedAt
+}

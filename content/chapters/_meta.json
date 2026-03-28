@@ -1,0 +1,104 @@
+{
+  "vorwort": {
+    "title": "Vorwort",
+    "number": 0,
+    "lines": 7,
+    "chars": 1031
+  },
+  "grundlagen": {
+    "title": "1. Grundlagen: Kinder, Jugend und Medien",
+    "number": 1,
+    "lines": 142,
+    "chars": 9536
+  },
+  "familien-regeln": {
+    "title": "2. Familien-Regeln & Mediennutzungsvertrag",
+    "number": 2,
+    "lines": 190,
+    "chars": 8883
+  },
+  "alter-6-9": {
+    "title": "3. Altersstufe 6–9 Jahre",
+    "number": 3,
+    "lines": 155,
+    "chars": 7213
+  },
+  "alter-10-12": {
+    "title": "4. Altersstufe 10–12 Jahre",
+    "number": 4,
+    "lines": 351,
+    "chars": 17498
+  },
+  "alter-13-15": {
+    "title": "5. Altersstufe 13–15 Jahre",
+    "number": 5,
+    "lines": 337,
+    "chars": 16293
+  },
+  "alter-16-17": {
+    "title": "6. Altersstufe 16–17 Jahre",
+    "number": 6,
+    "lines": 417,
+    "chars": 17635
+  },
+  "geraete": {
+    "title": "7. Technischer Teil: Geräte sicher einstellen",
+    "number": 7,
+    "lines": 441,
+    "chars": 18012
+  },
+  "plattformen": {
+    "title": "8. Social Media & Gaming-Plattformen im Detail",
+    "number": 8,
+    "lines": 934,
+    "chars": 38357
+  },
+  "krisen": {
+    "title": "9. Konflikte & Krisen: Was tun, wenn...",
+    "number": 9,
+    "lines": 447,
+    "chars": 17674
+  },
+  "vorlagen": {
+    "title": "10. Bausteine & Vorlagen",
+    "number": 10,
+    "lines": 150,
+    "chars": 5652
+  },
+  "ki": {
+    "title": "11. KI & digitale Helfer",
+    "number": 11,
+    "lines": 226,
+    "chars": 9743
+  },
+  "aktualisierung": {
+    "title": "12. Aktualisierung und Ausblick",
+    "number": 12,
+    "lines": 105,
+    "chars": 4098
+  },
+  "schlusswort": {
+    "title": "Schlusswort",
+    "number": 13,
+    "lines": 54,
+    "chars": 3337
+  },
+  "anhang": {
+    "title": "Anhang: Wichtige Kontakte und Links",
+    "number": 14,
+    "lines": 145,
+    "chars": 6259
+  },
+  "rechtlicher-kompass": {
+    "title": "Rechtlicher Kompass: Aktualisierung März 2026 (NEU)",
+    "number": 14,
+    "lines": 38,
+    "chars": 2207
+  },
+  "impressum": {
+    "title": "Impressum und Haftungsausschluss",
+    "number": 15,
+    "lines": 33,
+    "chars": 2318
+  }
+}
